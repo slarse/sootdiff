@@ -82,7 +82,7 @@ public class Main {
       if (helpLine.hasOption("help") || args.length == 0) {
         HelpFormatter formatter = new HelpFormatter();
         formatter.printHelp("DoopModuleAnalysis", options);
-        System.exit(0);
+        System.exit(1);
       }
     } catch (ParseException ex) {
       System.err.println("Parsing failed.  Reason: " + ex.getMessage());
@@ -152,8 +152,11 @@ public class Main {
       String rhs = "\"rhs\" : " + resultStrings[1].trim();
 
       resultString = "{" + lhs + "," + rhs + "}";
+      System.out.println(resultString);
+      System.exit(1);
     }
-    System.out.print(resultString);
+    System.out.println("No differences");
+    System.exit(0);
   }
 
   public Main(String referenceFolder, String otherFileFolder, String qname) {

@@ -342,7 +342,6 @@ public class Main {
     soot.options.Options.v().set_debug(false);
     soot.options.Options.v().set_debug_resolver(true);
     soot.options.Options.v().set_prepend_classpath(true);
-    soot.options.Options.v().set_keep_line_number(true);
     soot.options.Options.v().set_output_format(soot.options.Options.output_format_none);
 
     //    soot.options.Options.v().set_no_bodies_for_excluded(true);

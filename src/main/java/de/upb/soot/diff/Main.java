@@ -357,7 +357,7 @@ public class Main {
     // FIXME: Jimple Soot optimization does not have any effect on the diff
     // activate optimization
     soot.options.Options.v().setPhaseOption("jop", "enabled:" + true);
-    soot.options.Options.v().setPhaseOption("jop.cp", "enabled:" + true);
+    soot.options.Options.v().setPhaseOption("jop.cp", "enabled:" + false);
     soot.options.Options.v().setPhaseOption("jop.cpf", "enabled:" + true);
     soot.options.Options.v().setPhaseOption("jop.dae", "enabled:" + true);
     soot.options.Options.v().setPhaseOption("jop.ubf1", "enabled:" + true);

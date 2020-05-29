@@ -363,9 +363,6 @@ public class Main {
     soot.options.Options.v().setPhaseOption("jop.ubf2", "enabled:" + true);
 
     soot.options.Options.v().setPhaseOption("jop.ule", "enabled:" + true);
-
-    // add the String optimizer
-    StringOptimizeBodyTransformer.addToSootConfig();
   }
 
   /*private void loadClasses(String modulePath) {
